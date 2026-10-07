@@ -9,8 +9,7 @@ export default function Searchmovie() {
     let { name } = useParams();
 
     let ans = useApi(
-        `${process.env.REACT_APP_API}/3/search/movie?api_key=${process.env.REACT_APP_KEY}&language=en-US&query=${name}&page=1`,
-        [name]
+        `${process.env.REACT_APP_API}/3/search/movie?api_key=${process.env.REACT_APP_KEY}&language=en-US&query=${name}&page=1`
     );
 
     console.log(ans);
